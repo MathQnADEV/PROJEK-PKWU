@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="Vector.png" alt="">
+        <img src="profil.jpg" alt="">
+
+        <div class="title">
+            <p>Selamat Datang</p>
+            <h5>Reynard Rande</h5>
+        </div>
+
+        <ul class="navlist">
+            <li><a href="#" onclick="contentpertama()">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li><a href="#" onclick="contentkedua()">
+                    <span class="material-symbols-outlined">monitoring</span>
+                    <p>Statistics</p>
+                </a>
+            </li>
+            <li><a href="#" onclick="contentketiga()">
+                    <span class="material-symbols-outlined">change_circle</span>
+                    <p>Transfers</p>
+                </a>
+            </li>
+            <li><a href="#" onclick="contentkeempat()">
+                    <span class="material-symbols-outlined">account_balance_wallet</span>
+                    <p>E-wallet</p>
+                </a>
+            </li>
+            <li><a href="#" onclick="contentkelima()">
+                    <span class="material-symbols-outlined">settings</span>
+                    <p>Settings</p>
+                </a>
+            </li>
+        </ul>
+
+        <div class="button">
+            <a href="#">
+                <span class="material-symbols-outlined">logout</span>
+                Log Out
+            </a>
+        </div>
+    </nav>
+
+    <section class="dashboard" id="dashboard">
+        <div class="dashboard-content">
+            <h1>Dashboard</h1>
+            <div class="box-saldo">
+                <div class="saldo">
+                    <img src="logo2.png" alt="">
+                    <h2>Rp.30.900.600</h2>
+                </div>
+                <div class="topup">
+                    <a href="">
+                        <i class="uil uil-plus-circle"></i>
+                        <p>Top Up</p>
+                    </a>
+                </div>
+                <div class="share">
+                    <a href="">
+                        <i class="uil uil-share"></i>
+                        <p>Share</p>
+                    </a>
+                </div>
+            </div>
+            <a class="statistics" id="statistic-dashboard">
+                <h4>Statistics</h4>
+                <div class="statistics-content">
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                    <div class="graphic">
+                        <div class="pink"></div>
+                        <div class="purple"></div>
+                    </div>
+                </div>
+                <div class="bulan">
+                    <p>Jan</p>
+                    <p>Feb</p>
+                    <p>Mar</p>
+                    <p>Apr</p>
+                    <p>Mey</p>
+                    <p>Jun</p>
+                    <p>Jul</p>
+                    <p>Aug</p>
+                    <p>Sep</p>
+                </div>
+            </a>
+        </div>
+        <div class="dashboard-content2">
+            <div class="theme">
+                    <i id="menu-icon" class="uil uil-moon" onclick="myFunction()"></i>
+                    <i id="menu-iconn" class="uil uil-airplay"></i>
+            </div>
+            <div class="card">
+                <div class="bagian1">
+                    <img src="card1.png" alt="">
+                    <img src="card2.png" alt="">
+                </div>
+                <div class="bagian2">
+                    <p>**** **** **** 3906</p>
+                </div>
+                <div class="bagian3">
+                    <div class="left">
+                        <p>Card Header Name</p>
+                        <h5>Reynard E. Rande</h5>
+                    </div>
+                    <div class="right">
+                        <p>Expiry Date</p>
+                        <p>3/09</p>
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <div class="text">
+                    <p>Recent Transaction</p>
+                    <a href="">View All</a>
+                </div>
+                <div class="box" style="--i:1">
+                    <div class="left">
+                        <img src="Bank-Central-Asia-BCA-Logo_vectrostudio.jpg" alt="">
+                        <div class="text1">
+                            <h5>Mandiri</h5>
+                            <p>03 Nov 2022, 03:09</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h5>-Rp.200.000</h5>
+                        <p>Berhasil</p>
+                    </div>
+                </div>
+                <div class="box" style="--i:2">
+                    <div class="left">
+                        <img src="images.png" alt="">
+                        <div class="text1">
+                            <h5>Mandiri</h5>
+                            <p>03 Nov 2022, 03:09</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h5>-Rp.200.000</h5>
+                        <p>Berhasil</p>
+                    </div>
+                </div>
+                <div class="box" style="--i:3">
+                    <div class="left">
+                        <img src="Bank-Central-Asia-BCA-Logo_vectrostudio.jpg" alt="">
+                        <div class="text1">
+                            <h5>Mandiri</h5>
+                            <p>03 Nov 2022, 03:09</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h5>-Rp.200.000</h5>
+                        <p>Berhasil</p>
+                    </div>
+                </div>
+                <div class="box" style="--i:4">
+                    <div class="left">
+                        <img src="images.png" alt="">
+                        <div class="text1">
+                            <h5>Mandiri</h5>
+                            <p>03 Nov 2022, 03:09</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h5>-Rp.200.000</h5>
+                        <p>Berhasil</p>
+                    </div>
+                </div>
+                <div class="box" style="--i:5">
+                    <div class="left">
+                        <img src="Bank-Central-Asia-BCA-Logo_vectrostudio.jpg" alt="">
+                        <div class="text1">
+                            <h5>Mandiri</h5>
+                            <p>03 Nov 2022, 03:09</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h5>-Rp.200.000</h5>
+                        <p>Berhasil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistic" id="statistic">
+        <div class="bagian-atas">
+            <h1>Statistics</h1>
+            <i id="menu-icon" class="uil uil-moon" onclick="myFunction()"></i>
+        </div>
+        <div class="content1">
+            <div class="statistics-content">
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+                <div class="graphic">
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                </div>
+            </div>
+            <div class="bulan">
+                <p style="--tanggal:6">Jan</p>
+                <p style="--tanggal:5">Feb</p>
+                <p style="--tanggal:4">Mar</p>
+                <p style="--tanggal:3">Apr</p>
+                <p style="--tanggal:2">Mey</p>
+                <p style="--tanggal:1">Jun</p>
+                <p style="--tanggal:1">Jul</p>
+                <p style="--tanggal:2">Aug</p>
+                <p style="--tanggal:3">Sep</p>
+                <p style="--tanggal:4">Oct</p>
+                <p style="--tanggal:5">Nov</p>
+                <p style="--tanggal:6">Dec</p>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="earning">
+                <i class="uis uis-arrow-circle-up"></i>
+                <p>Earnings</p>
+                <h1>+10<span>%</span></h1>
+            </div>
+            <div class="spending">
+                <i class="uis uis-arrow-circle-down"></i>
+                <p>Spendings</p>
+                <h1>-5<span>%</span></h1>
+            </div>
+            <div class="goals">
+                <div class="circle-wrapper">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div id="number">
+                            75<span>%</span>
+                        </div>
+                </div>
+                <div class="text">
+                    <h5>Goals</h5>
+                    <p>Rp200.000 of Rp2.500.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="transfer" id="transfer">
+        <div class="bagian-atas">
+            <h1>Transfer</h1>
+            <i id="menu-icon" class="uil uil-moon" onclick="myFunction()"></i>
+        </div>
+        <div class="search">
+            <i class="uil uil-search"></i>
+            <input type="text" name="" id="find" placeholder="Temukan Rekening..." onkeyup="search()">
+        </div>
+        <div class="contact-list">
+            <div class="contact">
+                <div class="profile">
+                    <h1>RR</h1>
+                </div>
+                <h3>Reynard Rande</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>S</h1>
+                </div>
+                <h3>Shaquille</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>AK</h1>
+                </div>
+                <h3>Aura Khaibran</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>AA</h1>
+                </div>
+                <h3>Adristi Adya</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>YT</h1>
+                </div>
+                <h3>Yudistira Tirta</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>RE</h1>
+                </div>
+                <h3>Rasheza Ekaprima</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>TF</h1>
+                </div>
+                <h3>Tegar Fachreza</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>IR</h1>
+                </div>
+                <h3>Ilham Ramadhan</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>BS</h1>
+                </div>
+                <h3>Bisri Syahrul</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>G</h1>
+                </div>
+                <h3>Gyerend</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>IB</h1>
+                </div>
+                <h3>I Buleleng</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>J</h1>
+                </div>
+                <h3>Jevon</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>RH</h1>
+                </div>
+                <h3>Raihan Hidayah</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>SR</h1>
+                </div>
+                <h3>Sepdaffa Raja</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>YA</h1>
+                </div>
+                <h3>Yusuf Anugrah</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>AR</h1>
+                </div>
+                <h3>Ade Rezki</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>CR</h1>
+                </div>
+                <h3>Caesar Rabin</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>A</h1>
+                </div>
+                <h3>Adzkia</h3>
+            </div>
+            <div class="contact">
+                <div class="profile">
+                    <h1>AM</h1>
+                </div>
+                <h3>Andi Mulqi</h3>
+            </div>
+        </div>
+        <div class="new-transfer">
+            <a href="#" onclick="newtransfer()">
+                <h1>Transfer ke Tujuan Baru</h1>
+                <i class="uil uil-arrow-circle-right"></i>
+            </a>
+        </div>
+        <div class="selectbank" id="selectbank">
+            <div class="wrapper">
+                <div class="button">
+                    <i class="uil uil-multiply" id="transfercancel"></i>
+                </div>
+                <div class="opsi">
+                    <div class="select-box">
+                        <div class="selected" id="selected">
+                            <p id="selecttext">Pilih Bank</p>
+                            <i class="uil uil-angle-down"></i>
+                        </div>
+                        <ul class="selectoption hide" id="opsipilihbank">
+                            <li class="option">
+                                <input type="radio" class="radio" id="mandiri" name="mandiri" />
+                                <label for="mandiri">Mandiri</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" class="radio" id="BRI" name="BRI" />
+                                <label for="BRI">BRI</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" class="radio" id="BNI" name="BNI" />
+                                <label for="BNI">BNI</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" class="radio" id="BCA" name="BCA" />
+                                <label for="BCA">BCA</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" class="radio" id="mandiri" name="mandiri" />
+                                <label for="mandiri">Mandiri</label>
+                            </li>
+                            <li class="option">
+                                <input type="radio" class="radio" id="mandiri" name="category" />
+                                <label for="film">Mandiri</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="norek">
+                        <input type="number" name="norekening" placeholder="Nomor Rekening" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="16" required>
+                    </div>
+                </div>
+                <div class="next">
+                    <a href="#" onclick="transfernext()">Lanjutkan</a>
+                </div>
+            </div>
+        </div>
+        <div class="nominaltransfer" id="nominaltransfer">
+            <div class="wrapper">
+                <div class="button">
+                    <i class="uil uil-arrow-left" id="transferback"></i>
+                </div>
+                <div class="nominal">
+                    Rp.
+                    <input type="number" name="nominal" placeholder="Masukkan Nominal" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="20" required>
+                </div>
+                <div class="next">
+                    <a href="#" onclick="lanjutverifikasi()">Lanjut</a>
+                </div>
+            </div>
+        </div>
+        <div class="confirm" id="confirm">
+            <div class="wrapper" id="wrapper">
+                <input type="text" name="email" placeholder="Konfirmasi Email" required>
+                <div class="button">
+                    <a href="#" onclick="konfirmasi()">
+                        <i class="uil uil-check"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="succes" id="succes" onclick="selesai()">
+            <div class="wrapper">
+                <i class="uil uil-check-circle"></i>
+                <p>Transfer Sukses!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="E-wallet" id="E-wallet">
+        <div class="bagian-atas">
+            <h1>E-wallet</h1>
+            <i id="menu-icon" class="uil uil-moon" onclick="myFunction()"></i>
+        </div>
+        <div class="content">
+            <div class="box">
+                <img src="gopay.png" alt="">
+                <h5>Gopay</h5>
+            </div>
+            <div class="box">
+                <img src="linkaja.png" alt="">
+                <h5>Link Aja</h5>
+            </div>
+            <div class="box">
+                <img src="bca.png" alt="">
+                <h5>BCA Mobile</h5>
+            </div><div class="box">
+                <img src="bri.png" alt="">
+                <h5>BRI Mobile</h5>
+            </div>
+            <div class="box">
+                <img src="ovo.png" alt="">
+                <h5>OVO</h5>
+            </div>
+            <div class="box">
+                <img src="mandiri.jpg" alt="">
+                <h5>Livin'</h5>
+            </div><div class="box">
+                <img src="dana.png" alt="">
+                <h5>Dana</h5>
+            </div>
+            <div class="box">
+                <img src="linkaja.png" alt="">
+                <h5>Link Aja</h5>
+            </div>
+            <div class="box">
+                <img src="bca.png" alt="">
+                <h5>BCA Mobile</h5>
+            </div><div class="box">
+                <img src="gopay.png" alt="">
+                <h5>Gopay</h5>
+            </div>
+            <div class="box">
+                <img src="linkaja.png" alt="">
+                <h5>Link Aja</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="settings" id="settings">
+        <div class="bagian-atas">
+            <i id="menu-icon" class="uil uil-moon" onclick="myFunction()"></i>
+        </div>
+        <div class="isi">
+            <img src="profil.jpg" alt="">
+            <div class="edit">
+                <a href="">Ubah Foto Profil</a>
+            </div>
+            <div class="content">
+                <a href="">
+                    <i class="uil uil-user-circle"></i>
+                    <p>Akun</p>
+                </a>
+                <a href="">
+                    <i class="uil uil-globe"></i>
+                    <p>Bahasa</p>
+                </a>
+                <a href="">
+                    <i class="uil uil-bell"></i>
+                    <p>Notifikasi</p>
+                </a>
+                <a href="">
+                    <i class="uil uil-clock-nine"></i>
+                    <p>Kegiatan</p>
+                </a>
+                <a href="">
+                    <i class="uil uil-shield-plus"></i>
+                    <p>Keamanan</p>
+                </a>
+                <a href="">
+                    <i class="uil uil-question-circle"></i>
+                    <p>Bantuan</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="code.js"></script>
+</body>
+</html>
